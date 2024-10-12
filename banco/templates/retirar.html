@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>retiro</title>
+</head>
+<body>
+    <h1>retirar dinero</h1>
+    <form method="POST" action="{{url_for('withdraw')}}">
+        <label for="account">nombre de la cuenta</label>
+        <input type="text" name="account" id="account" required/><br>
+        <br/>
+        <label for="amount">cantidad</label>
+        <input type="numbre" step="0.01" name="amount" id="amount" required/><br>
+        <br/>
+        <button type ="submit">retirar</button>
+    </form>
+    <a herf="{{url_for('index')}}">volver al menu principal</a>
+</body>
+</html>

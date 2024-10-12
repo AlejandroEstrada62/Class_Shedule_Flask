@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>transferencia</title>
+</head>
+<body>
+    <h1>transferir</h1>
+    <form method="POST" action="{{url_for('transfer')}}">
+        <label for="from_account">cuenta de origen</label>
+        <input type="text" name="account" id="account" required/><br>
+        <br/>
+        <label for="to_account">cuenta de inicio</label>
+        <input type="numbre" step="0.01" name="amount" id="amount" required/><br>
+        <br/><br>
+        <br/>
+        <label for="amount">cantidad</label>
+        <input type="numbre" step="0.01" name="amount" id="amount" required/><br>
+        <br/>
+        <button type ="submit">transferir</button>
+    </form>
+    <a herf="{{url_for('index')}}">volver al menu principal</a>
+</body>
+</html>

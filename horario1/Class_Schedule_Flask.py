@@ -72,7 +72,7 @@ def agregar_clase():
         hora = request.form['hora']
         grupo = request.form['grupo']
         horario.agregar_clase(profe, nombre, dia, hora, grupo)
-        return redirect(url_for('mostrar_horario'))
+        return redirect(url_for('index'))
     return render_template('agregar_clase.html')
 
 @app.route("/eliminar_clase", methods=['GET', 'POST'])
@@ -82,7 +82,7 @@ def eliminar_clase():
         hora = request.form['hora']
         nombre_clase = request.form['nombre_clase']
         horario.eliminar_clase(dia, hora, nombre_clase)
-        return redirect(url_for('mostrar_horario'))
+        return redirect(url_for('index'))
     return render_template('eliminar_horario.html')
 
 @app.route('/mostrar_horario', methods=['GET', 'POST'])

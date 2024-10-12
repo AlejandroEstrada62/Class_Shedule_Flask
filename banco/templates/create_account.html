@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>crear cuenta</title>
+</head>
+<body>
+    <h1>crear una nueva cuenta bancaria</h1>
+    <form method="POST" action="{{url_for('crate_account')}}">
+        <label for="name">titular de la cuenta</label>
+        <input type="text" name="name" id="name" required/><br>
+        <br/>
+        <label for="initial_balance">saldo inicial</label>
+        <input type="numbre" step="0.01" name="initial_balance" id="initial_balance"/><br>
+        <br/>
+        <button type ="submit">crar cuenta</button>
+    </form>
+    <a herf="{{url_for('index')}}">volver al menu principal</a>
+</body>
+</html>

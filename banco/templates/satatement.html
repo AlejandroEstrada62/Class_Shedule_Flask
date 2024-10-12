@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>estado de cuenta</title>
+</head>
+<body>
+    <h1>estado de cuenta de {{acount}}</h1>
+    <ul>
+        {% for transaction in transaction %}
+        <li>{{transaction}}</li>
+        {% endfor %}
+    </ul>
+    <a herf="{{url_for('index')}}">volver al menu principal</a>
+</body>
+</html>
