@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tu horario</title>
+</head>
+<body>
+    <h1>imprime tu horario</h1>
+    <form method="POST" action="{{url_for('mostrar_horario')}}">
+        <label for="dia">dia de la clase</label>
+        <input type="text" name="dia" id="dia" required/><br>
+        <br/>
+        <label for="hora">hora de la clase</label>
+        <input type="number" step="0.01" name="hora" id="hora"/><br>
+        <br/>
+        <button type ="submit">imprimir horario</button>
+    </form>
+    <a herf="{{url_for('index')}}">volver al menu principal</a>
+</body>
+</html>

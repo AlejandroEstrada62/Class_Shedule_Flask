@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>horario</title>
+</head>
+<body>
+    <h1>tu horario</h1>
+    <ul>
+        <li><a herf="{{url_for('agregar_clase')}}">agragar una clase al horario</a></li>
+        <li><a herf="{{url_for('eliminar_clase')}}">eliminar una clase del horario</a></li>
+        <li><a herf="{{url_for('mostrar_horario')}}">mostrar el horario</a></li>
+    </ul>
+    <p> {{get_flashed_messages()}} </p>
+</body>
+</html>
